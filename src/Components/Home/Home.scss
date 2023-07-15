@@ -1,0 +1,62 @@
+$bg: rgb(17, 17, 17);
+
+.banner{
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::after{
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $bg;
+        opacity: .4;
+    }
+}
+
+.row{
+    margin: 1rem .5rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
+         &:hover {
+             transform: translateY(-10px) scale(1.05s);
+         }
+}
+
+.card{
+    > img{
+        width: 98%;
+        border-radius: .5rem;
+    }
+}
+
+.feed{
+    margin: 1rem .5rem;
+    > div {
+        display: flex;
+        overflow-x: auto;
+        margin: .5rem 0;
+    }
+}
+
+.feed-card{
+    margin: 1rem .5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    
+    >img {
+        width: 230px;
+        cursor: pointer;
+        border-radius: .5rem;
+        margin-right: 1rem;
+    }
+}
