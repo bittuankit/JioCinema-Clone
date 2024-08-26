@@ -21,39 +21,77 @@ body{
 }
 
 .header {
-    height: 5rem;
-    background-color: $bg;
-    width: 1200px;
-    min-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    border-bottom: 2px solid #262728;
 
-    >img {
-        height: 80%;
-    }
-
-    >div {
-        color: #fff;
-        width: 100%;
-        margin: 1vmax;
-
-        >a {
-            font-weight: 500;
-            margin: 1vmax;
+    .header-items{
+        height: 4.5rem;
+        width: 1400px;
+        min-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    
+        >img {
+            height: 80%;
         }
-    }
+    
+        >.links {
+            width: 100%;
+            margin-left: 2vmax;
 
-    >svg {
-        color: #fff;
-        font-size: 2rem;
+            >a {
+                font-weight: 500;
+                margin: .6vmax;
+                color: #717171;
 
-    &:hover {
+                &:hover {
+                    color: #fff;
+                    transition: .3s;
+                }
+            }
+        }
+
+        > .search-bar{
+            width: calc(100% - 800px);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 2rem;
+            background: #262728;
+            padding: 0 1.5rem;
+            border-radius: 70px;
+        
+            > #search {
+                width: 100%;
+                border: none;
+                margin: 0 .5rem;
+                padding: 0 .5rem;
+                background: #262728;
+                outline: 0;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.4375em;
+                letter-spacing: 0.00938em;
+                cursor: text;
+                display: inline-flex;
+                -webkit-box-align: center;
+                align-items: center;
+                color: #fff;
+                height: 40px;
+            }
+        }
+
+        >svg {
+            color: #fff;
+            font-size: 2rem;
+
+        &:hover {
             color: #d9008d;
             transition: .3s;
             cursor: pointer;
-        }
+            }
+        }   
     }
 }
