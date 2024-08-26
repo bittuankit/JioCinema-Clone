@@ -5,7 +5,7 @@ $bg: rgb(17, 17, 17);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 
     &::after{
@@ -40,6 +40,9 @@ $bg: rgb(17, 17, 17);
 
 .feed{
     margin: 1rem .5rem;
+    ::-webkit-scrollbar{
+        opacity: 0;
+    }
     > div {
         display: flex;
         overflow-x: auto;

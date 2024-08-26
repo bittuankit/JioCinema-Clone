@@ -117,14 +117,6 @@ const Home = () => {
   return (
     <>
       <section className="home">
-        <div
-          className="banner"
-          style={{
-            backgroundImage: movie[0]
-              ? `url(${`${imgUrl}/${movie[0].poster_path}`})`
-              : "rgb(16, 16, 16)",
-          }}
-        ></div>
         <Row title={"Hot Right Now 🔥"} />
         <Feed title={`${month[current.getMonth()]} Bingelist 👀`} arr={movie} />
         <Feed title={"Most Watched Blockbusters 🍿"} arr={popularMovie} />
